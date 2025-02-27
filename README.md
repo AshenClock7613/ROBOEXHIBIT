@@ -13,7 +13,7 @@ RoboExhibit is a cutting-edge AI-driven system designed to revolutionize the mus
 ## Repository Structure
 The project is organized into the following key files and directories:
 ## Demo Video
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Yx5UH_NVQaA" frameborder="0" allowfullscreen></iframe>
+[![Demo Video](https://img.youtube.com/vi/Yx5UH_NVQaA/maxresdefault.jpg)](https://youtu.be/Yx5UH_NVQaA)
 
 - **Documentazione RoboExhibit.pdf** - Detailed documentation about the project, methodologies, and implementation.
 - **Museo.zip** - The full Unity project containing the AI-driven museum experience, including the agent behaviors and interactive environments.
