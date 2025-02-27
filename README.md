@@ -75,7 +75,7 @@ The project is organized into the following key files and directories:
 - **Enhanced Accessibility**: By supporting multiple languages and interactive interfaces, RoboExhibit makes museum visits more inclusive.
 
 ## Project Report
-For more details, refer to the [Documentazione RoboExhibit.pdf](Documentazione%20RoboExhibit.pdf) file or .pptx [PPTX File](Progetto RoboticaIA2.pptx).
+For more details, refer to the [Documentazione RoboExhibit.pdf](Documentazione%20RoboExhibit.pdf) file or .pptx [PPTX File](Progetto%20RoboticaIA2.pptx).
 
 ## License
 This project is distributed under the license found in the **LICENSE** file.
