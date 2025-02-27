@@ -22,6 +22,7 @@ RoboExhibit is a cutting-edge AI-driven system designed to revolutionize the mus
   - Executes the queries to retrieve museum information.
   - Uses an AI-driven **language model** to generate natural and context-aware responses.
   - Translates responses into multiple languages if necessary.
+  - Leverages a **backend hosted on Hugging Face Spaces** to process natural language queries efficiently and generate real-time responses.
 - **Human-Robot Collaboration**: The system is designed to complement human staff, allowing for seamless coordination between robotic and human guides, ensuring a rich and flexible experience for visitors.
 - **Interactive Digital Exhibits and Multi-Sensory Engagement**: Certain museum rooms feature AI-powered interactive displays that react dynamically to visitor presence and input, offering deeper engagement with artworks and artifacts.
 - **Real-Time Replanning and Adaptive Tour Paths**: Unlike static guided tours, RoboExhibit continuously re-evaluates and modifies visitor routes based on preferences, new requests, environmental conditions, and updated museum schedules. This ensures that visitors receive a highly personalized and adaptive tour experience.
@@ -42,6 +43,7 @@ RoboExhibit is a cutting-edge AI-driven system designed to revolutionize the mus
      - Extracting knowledge through SPARQL.
      - Refining and formatting responses using an AI-driven language model.
      - Translating responses into the visitor’s language if needed.
+     - Utilizing a **backend hosted on Hugging Face Spaces** to process natural language queries and enhance response generation.
 5. **Seamless Human-Robot Collaboration**:
    - Both human and robotic guides work together, with robots handling routine explanations and humans assisting with complex queries.
    - The ticketing system is managed by both robotic and human assistants, ensuring flexibility in visitor interactions.
@@ -62,4 +64,3 @@ For more details, refer to the [Documentazione RoboExhibit.pdf](Documentazione_R
 
 ## License
 This project is distributed under the license found in the **LICENSE** file.
-
