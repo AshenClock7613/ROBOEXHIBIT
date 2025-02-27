@@ -1,0 +1,1680 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/"
+     xml:base="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:progettoMuseo="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#"
+     xmlns:untitled-ontology-39="http://www.semanticweb.org/lucreziamosca/ontologies/2024/11/untitled-ontology-39#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#èInteragitaDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#èInteragitaDa">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Interagisce_con"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Installazione_Interattiva"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <rdfs:label xml:lang="en">isInteractedBy</rdfs:label>
+        <rdfs:label xml:lang="it">èInteragitaDa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Conduce -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Conduce">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èCondottoDa"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_del_Museo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:label xml:lang="it">conduce</rdfs:label>
+        <rdfs:label xml:lang="en">conducts</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Contiene -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Contiene">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èContenuto"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:label xml:lang="en">contains</rdfs:label>
+        <rdfs:label xml:lang="it">contiene</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Espone -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Espone">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èEsposto"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:label xml:lang="it">espone</rdfs:label>
+        <rdfs:label xml:lang="en">exhibits</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Interagisce_con -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Interagisce_con">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Installazione_Interattiva"/>
+        <rdfs:label xml:lang="en">interactsWith</rdfs:label>
+        <rdfs:label xml:lang="it">interagisceCon</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Organizza -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Organizza">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èOrganizzato"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:label xml:lang="en">organize</rdfs:label>
+        <rdfs:label xml:lang="it">organizza</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Partecipazione_a_Evento -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Partecipazione_a_Evento">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èPartecipato"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:label xml:lang="it">partecipaA</rdfs:label>
+        <rdfs:label xml:lang="en">participateIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Vende -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Vende">
+        <owl:inverseOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èVenduto"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto"/>
+        <rdfs:label xml:lang="en">sells</rdfs:label>
+        <rdfs:label xml:lang="it">vende</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èCondottoDa -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èCondottoDa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Tour_Guidato"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_del_Museo"/>
+        <rdfs:label xml:lang="en">isConductedBy</rdfs:label>
+        <rdfs:label xml:lang="it">èCondottoDa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èContenuto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èContenuto">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo"/>
+        <rdfs:label xml:lang="en">isContainedIn</rdfs:label>
+        <rdfs:label xml:lang="it">èContenutoIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èEsposto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èEsposto">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:label xml:lang="en">isExhibitedIn</rdfs:label>
+        <rdfs:label xml:lang="it">èEspostoIn</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èOrganizzato -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èOrganizzato">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo"/>
+        <rdfs:label xml:lang="en">isOrganizedBy</rdfs:label>
+        <rdfs:label xml:lang="it">èOrganizzatoDa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èPartecipato -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èPartecipato">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <rdfs:label xml:lang="en">isParticipatedBy</rdfs:label>
+        <rdfs:label xml:lang="it">èPartecipatoDa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èVenduto -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/èVenduto">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio"/>
+        <rdfs:label xml:lang="en">isSoldBy</rdfs:label>
+        <rdfs:label xml:lang="it">èVendutoDa</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#cittàMuseo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#cittàMuseo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">cittàMuseo</rdfs:label>
+        <rdfs:label xml:lang="en">museumCity</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#cognomeVisitatore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#cognomeVisitatore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">cognomeVisitatore</rdfs:label>
+        <rdfs:label xml:lang="en">visitorSurname</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#dataDiCreazioneOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#dataDiCreazioneOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="it">dataDiCreazioneOpera</rdfs:label>
+        <rdfs:label xml:lang="en">workCreationDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#dataDiNascitaVisitatore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#dataDiNascitaVisitatore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="it">dataDiNascitaVisitatore</rdfs:label>
+        <rdfs:label xml:lang="en">visitorDateOfBirth</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#dataVisita -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#dataVisita">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="it">dataVisita</rdfs:label>
+        <rdfs:label xml:lang="en">dateOfVisit</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#descrizioneEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#descrizioneEvento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">descrizioneEvento</rdfs:label>
+        <rdfs:label xml:lang="en">eventDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#descrizioneMuseo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#descrizioneMuseo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">descrizioneMuseo</rdfs:label>
+        <rdfs:label xml:lang="en">museumDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#descrizioneOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#descrizioneOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">descrizioneOpera</rdfs:label>
+        <rdfs:label xml:lang="en">workDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#descrizioneStanza -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#descrizioneStanza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">descrizioneStanza</rdfs:label>
+        <rdfs:label xml:lang="en">roomDescription</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#dimensioneOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#dimensioneOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">dimensioneOpera</rdfs:label>
+        <rdfs:label xml:lang="en">workSize</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#idAgente -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#idAgente">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Agente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">agentId</rdfs:label>
+        <rdfs:label xml:lang="it">idAgente</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#idBiglietto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#idBiglietto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="it">idBiglietto</rdfs:label>
+        <rdfs:label xml:lang="en">ticketId</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#idEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#idEvento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="en">eventId</rdfs:label>
+        <rdfs:label xml:lang="it">idEvento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#idVisitatore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#idVisitatore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:comment xml:lang="it">idVisitatore</rdfs:comment>
+        <rdfs:comment xml:lang="en">visitatoreId</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#interattivitàOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#interattivitàOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="en">interactivityWork</rdfs:label>
+        <rdfs:label xml:lang="it">interattivitàOpera</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#materialeInterattivoStanza -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#materialeInterattivoStanza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">materialeInterattivoStanza</rdfs:label>
+        <rdfs:label xml:lang="en">roomInteractiveMaterial</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nomeAgente -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nomeAgente">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Agente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">agentName</rdfs:label>
+        <rdfs:label xml:lang="it">nomeAgente</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nomeEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nomeEvento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">eventName</rdfs:label>
+        <rdfs:label xml:lang="it">nomeEvento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nomeMuseo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nomeMuseo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">museumName</rdfs:label>
+        <rdfs:label xml:lang="it">nomeMuseo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nomeStanza -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nomeStanza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">nomeStanza</rdfs:label>
+        <rdfs:label xml:lang="en">roomName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nomeVisitatore -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nomeVisitatore">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">nomeVisitatore</rdfs:label>
+        <rdfs:label xml:lang="en">visitorName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#numeroStanza -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#numeroStanza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#integer"/>
+        <rdfs:label xml:lang="it">numeroStanza</rdfs:label>
+        <rdfs:label xml:lang="en">roomNumber</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#posizioneOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#posizioneOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">posizioneOpera</rdfs:label>
+        <rdfs:label xml:lang="en">workPosition</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#statoMuseo -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#statoMuseo">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">museumState</rdfs:label>
+        <rdfs:label xml:lang="it">statoMuseo</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tecnicaOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tecnicaOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">tecnicaOpera</rdfs:label>
+        <rdfs:label xml:lang="en">workTechnique</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tipoAgente -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tipoAgente">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Agente"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">agentType</rdfs:label>
+        <rdfs:label xml:lang="it">tipoAgente</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tipoEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tipoEvento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">eventType</rdfs:label>
+        <rdfs:label xml:lang="it">tipoEvento</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tipoStanza -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tipoStanza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">roomType</rdfs:label>
+        <rdfs:label xml:lang="it">tipoStanza</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/accessibilitàStanza -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/accessibilitàStanza">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
+        <rdfs:label xml:lang="it">accessibilitàStanza</rdfs:label>
+        <rdfs:label xml:lang="en">roomAccessibility</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/autoreOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/autoreOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">authorOfWork</rdfs:label>
+        <rdfs:label xml:lang="it">autoreOpera</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/dataEvento -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/dataEvento">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#dateTime"/>
+        <rdfs:label xml:lang="it">dataEvento</rdfs:label>
+        <rdfs:label xml:lang="en">eventDate</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/materialeOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/materialeOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">materialeOpera</rdfs:label>
+        <rdfs:label xml:lang="en">workMaterial</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/nomeOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/nomeOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">nomeOpera</rdfs:label>
+        <rdfs:label xml:lang="en">workName</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/periodoStoricoOpera -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/periodoStoricoOpera">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="it">periodoStoricoOpera</rdfs:label>
+        <rdfs:label xml:lang="en">workHistoricalPeriod</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/prezzoBiglietto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/prezzoBiglietto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:label xml:lang="it">prezzoBiglietto</rdfs:label>
+        <rdfs:label xml:lang="en">ticketPrice</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/tipoBiglietto -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/tipoBiglietto">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:label xml:lang="en">ticketType</rdfs:label>
+        <rdfs:label xml:lang="it">tipoBiglietto</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Ingresso -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Ingresso">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#NessunaGuida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#NessunaGuida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_del_Museo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_Persona"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_Robot"/>
+        <rdfs:label xml:lang="it">NessunaGuida</rdfs:label>
+        <rdfs:label xml:lang="en">NoGuide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#TourNonGuidato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#TourNonGuidato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Tour_Guidato"/>
+        <rdfs:label xml:lang="en">NoGuidedTour</rdfs:label>
+        <rdfs:label xml:lang="it">TourNonGuidato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Agente -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Agente">
+        <rdfs:label xml:lang="en">Agent</rdfs:label>
+        <rdfs:label xml:lang="it">Agente</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Artefatto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Artefatto">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Installazione_Interattiva"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Quadro"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Statua"/>
+        <rdfs:label xml:lang="it">Artefatto</rdfs:label>
+        <rdfs:label xml:lang="en">Artifact</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Agente"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_del_Museo"/>
+        <rdfs:label xml:lang="it">Bigliettaio</rdfs:label>
+        <rdfs:label xml:lang="en">TicketSeller</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio_Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio_Persona">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio_Robot"/>
+        <rdfs:label xml:lang="it">BigliettaioPersona</rdfs:label>
+        <rdfs:label xml:lang="en">TicketSellerPerson</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio_Robot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio_Robot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio"/>
+        <rdfs:label xml:lang="it">BigliettaioRobot</rdfs:label>
+        <rdfs:label xml:lang="en">TicketSellerRobot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto">
+        <rdfs:label xml:lang="it">Biglietto</rdfs:label>
+        <rdfs:label xml:lang="en">Ticket</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto_con_Guida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto_con_Guida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto_senza_Guida"/>
+        <rdfs:label xml:lang="it">BigliettoConGuida</rdfs:label>
+        <rdfs:label xml:lang="en">GuidedTicket</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto_senza_Guida -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto_senza_Guida">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto"/>
+        <rdfs:label xml:lang="it">BigliettoSenzaGuida</rdfs:label>
+        <rdfs:label xml:lang="en">UnguidedTicket</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Corridoio -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Corridoio">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Interattiva"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Tematica"/>
+        <rdfs:label xml:lang="it">Corridoio</rdfs:label>
+        <rdfs:label xml:lang="en">Corridor</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento">
+        <rdfs:label xml:lang="en">Event</rdfs:label>
+        <rdfs:label xml:lang="it">Evento</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Gruppo_di_Visitatori -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Gruppo_di_Visitatori">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore_Individuale"/>
+        <rdfs:label xml:lang="it">GruppoDiVisitatori</rdfs:label>
+        <rdfs:label xml:lang="en">VisitorGroup</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_Persona -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_Persona">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_del_Museo"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_Robot"/>
+        <rdfs:label xml:lang="it">GuidaPersona</rdfs:label>
+        <rdfs:label xml:lang="en">GuidePerson</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_Robot -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_Robot">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_del_Museo"/>
+        <rdfs:label xml:lang="it">GuidaRobot</rdfs:label>
+        <rdfs:label xml:lang="en">GuideRobot</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_del_Museo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_del_Museo">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Agente"/>
+        <rdfs:label xml:lang="it">GuidaDelMuseo</rdfs:label>
+        <rdfs:label xml:lang="en">MuseumGuide</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Installazione_Interattiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Installazione_Interattiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Quadro"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Statua"/>
+        <rdfs:label xml:lang="it">InstallazioneInterattiva</rdfs:label>
+        <rdfs:label xml:lang="en">InteractiveInstallation</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo">
+        <rdfs:label xml:lang="it">Museo</rdfs:label>
+        <rdfs:label xml:lang="en">Museum</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera">
+        <rdfs:label xml:lang="en">Artwork</rdfs:label>
+        <rdfs:label xml:lang="it">OperaDArte</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Quadro -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Quadro">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Statua"/>
+        <rdfs:label xml:lang="en">Painting</rdfs:label>
+        <rdfs:label xml:lang="it">Quadro</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza">
+        <rdfs:label xml:lang="en">Room</rdfs:label>
+        <rdfs:label xml:lang="it">Stanza</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Interattiva -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Interattiva">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Tematica"/>
+        <rdfs:label xml:lang="en">InteractiveRoom</rdfs:label>
+        <rdfs:label xml:lang="it">StanzaInterattiva</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Tematica -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Tematica">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza"/>
+        <rdfs:label xml:lang="it">StanzaTematica</rdfs:label>
+        <rdfs:label xml:lang="en">ThematicRoom</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Statua -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Statua">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Opera"/>
+        <rdfs:label xml:lang="it">Statua</rdfs:label>
+        <rdfs:label xml:lang="en">Statue</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Tour_Guidato -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Tour_Guidato">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Evento"/>
+        <rdfs:label xml:lang="en">GuidedTour</rdfs:label>
+        <rdfs:label xml:lang="it">TourGuidato</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore">
+        <rdfs:label xml:lang="en">Visitator</rdfs:label>
+        <rdfs:label xml:lang="it">Visitatore</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore_Individuale -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore_Individuale">
+        <rdfs:subClassOf rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore"/>
+        <rdfs:label xml:lang="en">IndividualVisitor</rdfs:label>
+        <rdfs:label xml:lang="it">VisitatoreIndividuale</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#AfroditeDiMilo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#AfroditeDiMilo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Statua"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaGrecia"/>
+        <progettoMuseo:dataDiCreazioneOpera>130 a.C.</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">L&apos;Afrodite di Milo, conosciuta come Venere di Milo, è una scultura in marmo dell&apos;antica Grecia risalente al periodo ellenistico. Attribuita ad Alessandro di Antiochia, raffigura la dea Afrodite, simbolo di bellezza e amore. La statua è celebre per la sua posa elegante e armoniosa, con il busto leggermente inclinato e il panneggio che accentua la sensualità del corpo. Nonostante la perdita delle braccia, l&apos;opera affascina per la sua raffinatezza e perfezione formale. Oggi è esposta al Museo del Louvre, dove continua a essere un&apos;icona dell&apos;arte classica.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>202 cm</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(-1.171, 0, -0.004)</progettoMuseo:posizioneOpera>
+        <autoreOpera>Alessandro di Antiochia</autoreOpera>
+        <materialeOpera xml:lang="it">Marmo pario</materialeOpera>
+        <nomeOpera xml:lang="it">Afrodite di Milo</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Ellenismo</periodoStoricoOpera>
+        <rdfs:label xml:lang="it">AfroditeDiMilo</rdfs:label>
+        <rdfs:label xml:lang="en">AphroditeAndMilo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#AmoreEPsiche -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#AmoreEPsiche">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Statua"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaItalia"/>
+        <progettoMuseo:dataDiCreazioneOpera>1787-1793</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">Amore e Psiche di Antonio Canova è una scultura neoclassica realizzata nel 1793, che raffigura l&apos;abbraccio amoroso tra il dio Amore (Eros) e la mortale Psiche. L&apos;opera cattura un momento di intensa tenerezza e passione, con un&apos;eleganza compositiva che enfatizza la perfezione anatomica e il movimento armonioso delle figure. Il marmo, lavorato con straordinaria maestria, sembra quasi vivo, trasmettendo la leggerezza e la grazia del gesto. Questa scultura è considerata uno dei massimi capolavori del neoclassicismo, simbolo dell&apos;unione tra amore divino e umano.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>155 cm</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(0.677, 0, 0)</progettoMuseo:posizioneOpera>
+        <autoreOpera>Antonio Canova</autoreOpera>
+        <materialeOpera xml:lang="it">Marmo bianco</materialeOpera>
+        <nomeOpera xml:lang="it">Amore e Psiche</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Neoclassicismo</periodoStoricoOpera>
+        <rdfs:label xml:lang="it">AmoreEPische</rdfs:label>
+        <rdfs:label xml:lang="en">PsycheRevivedByCupid&apos;sKiss</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Autoritratto -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Autoritratto">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Quadro"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaVanGogh"/>
+        <progettoMuseo:dataDiCreazioneOpera>1889</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">Autoritratto è uno dei numerosi ritratti che Vincent van Gogh realizzò di sé stesso, utilizzando il proprio volto come soggetto per esplorare emozioni e tecniche pittoriche. Uno dei più noti, creato nel 1889, presenta l&apos;artista con uno sguardo intenso e introspezione profonda. Van Gogh si raffigura con tratti marcati e pennellate vibranti, che danno vita a un&apos;atmosfera inquieta e dinamica. I toni dominanti di blu e verde, contrapposti ai tocchi di arancione rossastro nella barba e nei capelli, sottolineano il contrasto emotivo. Quest&apos;opera riflette sia la sua instabilità interiore sia la sua straordinaria sensibilità artistica.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>65×54 cm</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(0.77, 0, 0.1)</progettoMuseo:posizioneOpera>
+        <progettoMuseo:tecnicaOpera xml:lang="it">Oleografia su tela</progettoMuseo:tecnicaOpera>
+        <autoreOpera>Vincent Van Gogh</autoreOpera>
+        <nomeOpera xml:lang="it">Autoritratto</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Postimpressionismo</periodoStoricoOpera>
+        <rdfs:label xml:lang="it">Autoritratto</rdfs:label>
+        <rdfs:label xml:lang="en">SelfPortrait</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#David -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#David">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Statua"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaItalia"/>
+        <progettoMuseo:dataDiCreazioneOpera>1501-1504</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">Il David di Michelangelo, scolpito tra il 1501 e il 1504, è una delle opere più celebri del Rinascimento. La statua, alta oltre 5 metri, rappresenta il giovane eroe biblico nell&apos;istante prima di affrontare Golia. Michelangelo raffigura un David concentrato, con uno sguardo deciso e i muscoli tesi, simbolo di forza, coraggio e bellezza ideale. Realizzato in marmo, l&apos;opera evidenzia la maestria anatomica dell&apos;artista e l&apos;ideale rinascimentale di armonia e proporzione. Originariamente collocato a Firenze, oggi il David è esposto nella Galleria dell&apos;Accademia.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>520 cm</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(0.586, 0, -0.1)</progettoMuseo:posizioneOpera>
+        <autoreOpera>Michelangelo Buonarroti</autoreOpera>
+        <materialeOpera xml:lang="it">Marmo a tutto tondo</materialeOpera>
+        <nomeOpera xml:lang="it">David</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Rinascimento</periodoStoricoOpera>
+        <rdfs:label xml:lang="en">David</rdfs:label>
+        <rdfs:label xml:lang="it">David</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Discobolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Discobolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Statua"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaGrecia"/>
+        <progettoMuseo:dataDiCreazioneOpera>455 a.C.</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">Il Discobolo di Mirone è una scultura in marmo dell&apos;antica Grecia, datata intorno al 460-450 a.C., che rappresenta un atleta nell&apos;atto di lanciare il disco. La statua cattura un momento di movimento dinamico, ma lo fa con grande equilibrio e armonia, tipici del periodo classico. L&apos;artista esprime perfettamente il concetto di forza e grazia attraverso il corpo muscoloso dell&apos;atleta, la cui posa è studiata per evidenziare sia la tensione che la fluidità del movimento. Sebbene l&apos;originale in bronzo sia andato perduto, il Discobolo è conosciuto grazie a copie romane in marmo.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>156 cm</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(0, 0, 0.77)</progettoMuseo:posizioneOpera>
+        <autoreOpera>Mirone</autoreOpera>
+        <materialeOpera xml:lang="it">Marmo</materialeOpera>
+        <nomeOpera xml:lang="it">Discobolo</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Classicismo</periodoStoricoOpera>
+        <rdfs:label xml:lang="en">Discobolo</rdfs:label>
+        <rdfs:label xml:lang="it">Discobolo</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Gioconda -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Gioconda">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Quadro"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaItalia"/>
+        <progettoMuseo:dataDiCreazioneOpera>1503-1506</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">La Gioconda, o Mona Lisa, è un celebre dipinto di Leonardo da Vinci, realizzato tra il 1503 e il 1506 circa. L&apos;opera raffigura una donna seduta, con le mani delicatamente posate e uno sfondo paesaggistico sfumato. Il suo enigmatico sorriso e lo sguardo diretto creano un senso di mistero e fascino. La tecnica dello sfumato, utilizzata da Leonardo, dona morbidezza ai contorni e una transizione graduale tra luci e ombre. La Mona Lisa è considerata un&apos;icona dell&apos;arte rinascimentale e un simbolo universale di bellezza e mistero. È esposta al Louvre di Parigi.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>77×53 cm</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(0.65, 0, 0)</progettoMuseo:posizioneOpera>
+        <progettoMuseo:tecnicaOpera xml:lang="it">Oleografia su tavola di pioppo</progettoMuseo:tecnicaOpera>
+        <autoreOpera>Leonardo Da Vinci</autoreOpera>
+        <nomeOpera xml:lang="it">Gioconda</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Rinascimento</periodoStoricoOpera>
+        <rdfs:label xml:lang="it">Gioconda</rdfs:label>
+        <rdfs:label xml:lang="en">MonaLisa</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Ingresso -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Ingresso">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Ingresso"/>
+        <èContenuto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo"/>
+        <progettoMuseo:descrizioneStanza xml:lang="it">L&apos;ingresso del museo è accogliente e ben organizzato, progettato per offrire un&apos;esperienza piacevole ai visitatori fin dal loro arrivo. Presenta una biglietteria dove è possibile acquistare i biglietti. L&apos;area è spesso decorata con elementi rappresentativi delle collezioni esposte, pannelli informativi e segnaletica chiara per orientare i visitatori. Inoltre, sono disponibili servizi come guardaroba, bookshop e, in alcuni casi, caffetteria o area relax.</progettoMuseo:descrizioneStanza>
+        <progettoMuseo:materialeInterattivoStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</progettoMuseo:materialeInterattivoStanza>
+        <progettoMuseo:nomeStanza xml:lang="it">Ingresso</progettoMuseo:nomeStanza>
+        <progettoMuseo:numeroStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">6</progettoMuseo:numeroStanza>
+        <progettoMuseo:tipoStanza xml:lang="it">Ingresso</progettoMuseo:tipoStanza>
+        <accessibilitàStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</accessibilitàStanza>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#LaNotteStellata -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#LaNotteStellata">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Quadro"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaVanGogh"/>
+        <progettoMuseo:dataDiCreazioneOpera>1889</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">La Notte Stellata è uno dei dipinti più celebri di Vincent van Gogh, realizzato nel 1889 durante il suo soggiorno presso il manicomio di Saint-Rémy-de-Provence. L&apos;opera rappresenta un paesaggio notturno vibrante, dominato da un cielo turbolento e pieno di energia, con vortici di stelle luminose, una grande luna crescente e il contrasto tra il movimento celeste e il villaggio quieto sottostante. Il cipresso scuro che si erge in primo piano sembra collegare la terra al cielo, creando un senso di spiritualità e introspezione. Oltre il villaggio, a destra, si nota, invece, un fitto bosco che sembra abbattersi sul villaggio come un maremoto. Infine, all’orizzonte colline e montagne lontane, sembrano onde gigantesche in corsa verso le case.Questo capolavoro riflette lo stato emotivo e il genio di Van Gogh, fondendo realtà e immaginazione.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>73,7x92,1 cm</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(0.66, 0, -0.039)</progettoMuseo:posizioneOpera>
+        <progettoMuseo:tecnicaOpera xml:lang="it">Oleografia su tela</progettoMuseo:tecnicaOpera>
+        <autoreOpera>Vincent Van Gogh</autoreOpera>
+        <nomeOpera xml:lang="it">La Notte Stellata</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Postimpressionismo</periodoStoricoOpera>
+        <rdfs:label xml:lang="it">LaNotteStellata</rdfs:label>
+        <rdfs:label xml:lang="en">TheStarryNight</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#RamoDiMandorloFiorito -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#RamoDiMandorloFiorito">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Quadro"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaVanGogh"/>
+        <progettoMuseo:dataDiCreazioneOpera>1890</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">Fiori di mandorlo è un dipinto di Vincent van Gogh realizzato nel 1890 per celebrare la nascita del nipote, Vincent Willem. L&apos;opera raffigura rami fioriti di un mandorlo contro un cielo azzurro brillante, evocando un senso di serenità e rinascita. I delicati fiori bianchi e rosa emergono con vivacità, simbolo di speranza e fragilità. L&apos;influenza dell&apos;arte giapponese è evidente nella composizione semplice e nei dettagli raffinati. Questo dipinto rappresenta uno dei lavori più gioiosi e ottimistici di Van Gogh.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>73,5×92 cm</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(0.82, 0, 0.03)</progettoMuseo:posizioneOpera>
+        <progettoMuseo:tecnicaOpera xml:lang="it">Oleografia su tela</progettoMuseo:tecnicaOpera>
+        <autoreOpera>Vincent Van Gogh</autoreOpera>
+        <nomeOpera xml:lang="it">Ramo Di Mandorlo Fiorito</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Post-Impressionismo</periodoStoricoOpera>
+        <rdfs:label xml:lang="en">AlmondTreeBranchInBloom</rdfs:label>
+        <rdfs:label xml:lang="it">RamoDiMandorloFiorito</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettaioPersona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettaioPersona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio_Persona"/>
+        <Vende rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettoConGuida"/>
+        <Vende rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettoSenzaGuida"/>
+        <progettoMuseo:idAgente rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</progettoMuseo:idAgente>
+        <progettoMuseo:nomeAgente xml:lang="it">Bigliettaio persona</progettoMuseo:nomeAgente>
+        <progettoMuseo:tipoAgente xml:lang="it">Persona</progettoMuseo:tipoAgente>
+        <rdfs:label xml:lang="it">BigliettaioPersona</rdfs:label>
+        <rdfs:label xml:lang="en">TicketSellerPerson</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettaioRobot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettaioRobot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Bigliettaio_Robot"/>
+        <Vende rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettoConGuida"/>
+        <Vende rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettoSenzaGuida"/>
+        <progettoMuseo:idAgente rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</progettoMuseo:idAgente>
+        <progettoMuseo:nomeAgente xml:lang="it">Bigliettaio Robot</progettoMuseo:nomeAgente>
+        <progettoMuseo:tipoAgente>Robot</progettoMuseo:tipoAgente>
+        <rdfs:label xml:lang="it">BigliettaioRobot</rdfs:label>
+        <rdfs:label xml:lang="en">TicketSellerRobot</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettoConGuida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettoConGuida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto_con_Guida"/>
+        <èVenduto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettaioPersona"/>
+        <èVenduto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettaioRobot"/>
+        <progettoMuseo:idBiglietto rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</progettoMuseo:idBiglietto>
+        <tipoBiglietto xml:lang="it">Con guida</tipoBiglietto>
+        <rdfs:label xml:lang="it">BigliettoConGuida</rdfs:label>
+        <rdfs:label xml:lang="en">GuidedTicket</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettoSenzaGuida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettoSenzaGuida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Biglietto_senza_Guida"/>
+        <èVenduto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettaioPersona"/>
+        <èVenduto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#bigliettaioRobot"/>
+        <progettoMuseo:idBiglietto rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</progettoMuseo:idBiglietto>
+        <tipoBiglietto xml:lang="it">Senza guida</tipoBiglietto>
+        <rdfs:label xml:lang="it">BigliettoSenzaGuida</rdfs:label>
+        <rdfs:label xml:lang="en">UnguidedTicket</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#capitelloIonico -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#capitelloIonico">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Artefatto"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaGrecia"/>
+        <progettoMuseo:dataDiCreazioneOpera>VI secolo a.C.</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">I capitelli ionici sono elementi architettonici caratteristici dell&apos;ordine ionico, sviluppati nell&apos;antica Grecia a partire dal VI secolo a.C. Sono riconoscibili per le loro volute simmetriche, ovvero decorazioni a spirale, che conferiscono eleganza e leggerezza. Solitamente realizzati in marmo o pietra calcarea, erano spesso dipinti o decorati per accentuarne i dettagli. Utilizzati in templi e edifici di prestigio, combinano raffinatezza estetica e funzionalità strutturale, rappresentando un&apos;evoluzione rispetto alla semplicità dei capitelli dorici. Tra gli esempi più celebri, il Tempio di Atena Nike e l&apos;Eretteo sull&apos;Acropoli di Atene.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="en">Ionic capitals are architectural elements characteristic of the Ionic order, developed in ancient Greece from the 6th century BCE. They are distinguished by their volutes, or spiral decorations, which add elegance and a sense of lightness. Typically crafted from marble or limestone, they were often painted or adorned to emphasize their intricate details. Used in temples and prestigious buildings, they blend aesthetic refinement with structural functionality, marking an evolution from the simplicity of Doric capitals. Notable examples include the Temple of Athena Nike and the Erechtheion on the Acropolis of Athens.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>80x50 cm</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(0, 0, -0.93)</progettoMuseo:posizioneOpera>
+        <autoreOpera xml:lang="it">Architetti delle città ioniche</autoreOpera>
+        <materialeOpera xml:lang="it">Marmo</materialeOpera>
+        <materialeOpera xml:lang="it">Pietra calcarea</materialeOpera>
+        <nomeOpera xml:lang="it">Capitello Ionico</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Periodo classico</periodoStoricoOpera>
+        <rdfs:label xml:lang="it">CapitelloIonico</rdfs:label>
+        <rdfs:label xml:lang="en">IonicCapital</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#corridoio -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#corridoio">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Corridoio"/>
+        <èContenuto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo"/>
+        <progettoMuseo:descrizioneStanza xml:lang="it">Il corridoio del museo è uno spazio ampio e ben illuminato, con pareti decorate da esposizioni temporanee o informazioni relative alle opere esposte. Lungo il corridoio si aprono diverse porte che conducono alle varie stanze del museo, ciascuna delle quali ospita un&apos;esperienza o una collezione diversa. In un angolo discreto del corridoio, una porta più semplice e funzionale dà accesso al bagno.</progettoMuseo:descrizioneStanza>
+        <progettoMuseo:materialeInterattivoStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:materialeInterattivoStanza>
+        <progettoMuseo:nomeStanza xml:lang="it">Corridoio</progettoMuseo:nomeStanza>
+        <progettoMuseo:numeroStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</progettoMuseo:numeroStanza>
+        <progettoMuseo:tipoStanza xml:lang="it">Corridoio</progettoMuseo:tipoStanza>
+        <accessibilitàStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</accessibilitàStanza>
+        <rdfs:label xml:lang="it">Corridoio</rdfs:label>
+        <rdfs:label xml:lang="en">Hallway</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#globoTerrestre -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#globoTerrestre">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Installazione_Interattiva"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo1"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo2"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore1"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore2"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore3"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore4"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaInterattiva"/>
+        <progettoMuseo:dataDiCreazioneOpera>2000-2020</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">Un sistema solare interattivo che ruota quando lo si tocca è un modello, fisico o digitale, del nostro sistema solare che risponde al tocco dell&apos;utente. Questo tipo di installazione consente di esplorare i pianeti e i loro movimenti orbitanti in modo coinvolgente e educativo. Grazie a sensori e tecnologie touch, quando si interagisce con il modello, i pianeti iniziano a ruotare intorno al Sole, permettendo di visualizzare e comprendere il movimento dei corpi celesti in modo dinamico e visivo.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>2-3 m</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(0, 0, 0.7936359)</progettoMuseo:posizioneOpera>
+        <autoreOpera xml:lang="it">Sconosciuto</autoreOpera>
+        <materialeOpera xml:lang="it">metallo</materialeOpera>
+        <materialeOpera xml:lang="it">resina composita</materialeOpera>
+        <materialeOpera xml:lang="it">vetro</materialeOpera>
+        <periodoStoricoOpera xml:lang="it">Periodo Contemporaneo</periodoStoricoOpera>
+        <rdfs:label xml:lang="it">GloboTerrestre</rdfs:label>
+        <rdfs:label xml:lang="en">TerrestrialGlobe</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Gruppo_di_Visitatori"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#globoTerrestre"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#pendolo"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#sistemaSolare"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato2"/>
+        <progettoMuseo:dataVisita rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-12T15:30:30</progettoMuseo:dataVisita>
+        <progettoMuseo:nomeVisitatore>Gruppo 1</progettoMuseo:nomeVisitatore>
+        <rdfs:label xml:lang="en">Group1</rdfs:label>
+        <rdfs:label xml:lang="it">Gruppo1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Gruppo_di_Visitatori"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#globoTerrestre"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#pendolo"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#sistemaSolare"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato2"/>
+        <progettoMuseo:dataVisita rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-10-10T10:10:10</progettoMuseo:dataVisita>
+        <progettoMuseo:nomeVisitatore>Gruppo 2</progettoMuseo:nomeVisitatore>
+        <rdfs:label xml:lang="en">Group2</rdfs:label>
+        <rdfs:label xml:lang="it">Gruppo2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#guidaPersona -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#guidaPersona">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_Persona"/>
+        <Conduce rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1"/>
+        <Conduce rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2"/>
+        <progettoMuseo:idAgente rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</progettoMuseo:idAgente>
+        <progettoMuseo:nomeAgente xml:lang="it">Guida Persona</progettoMuseo:nomeAgente>
+        <progettoMuseo:tipoAgente xml:lang="it">Persona</progettoMuseo:tipoAgente>
+        <rdfs:label xml:lang="it">GuidaPersona</rdfs:label>
+        <rdfs:label xml:lang="en">GuidePerson</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#guidaRobot -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#guidaRobot">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Guida_Robot"/>
+        <Conduce rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1"/>
+        <Conduce rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2"/>
+        <progettoMuseo:idAgente rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</progettoMuseo:idAgente>
+        <progettoMuseo:nomeAgente xml:lang="it">Guida Robot</progettoMuseo:nomeAgente>
+        <progettoMuseo:tipoAgente>Robot</progettoMuseo:tipoAgente>
+        <rdfs:label xml:lang="it">GuidaRobot</rdfs:label>
+        <rdfs:label xml:lang="en">RobotGuide</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Museo"/>
+        <Contiene rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Ingresso"/>
+        <Contiene rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#corridoio"/>
+        <Contiene rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaGrecia"/>
+        <Contiene rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaInterattiva"/>
+        <Contiene rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaItalia"/>
+        <Contiene rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaVanGogh"/>
+        <Organizza rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1"/>
+        <Organizza rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2"/>
+        <Organizza rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato1"/>
+        <Organizza rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato2"/>
+        <progettoMuseo:cittàMuseo>Palermo</progettoMuseo:cittàMuseo>
+        <progettoMuseo:descrizioneMuseo xml:lang="it">Il museo è un luogo suggestivo e affascinante, suddiviso in diverse stanze tematiche che offrono un viaggio attraverso arte e storia. Una stanza è dedicata all&apos;antica Grecia, con vasi, sculture e reperti che raccontano la cultura millenaria. Un&apos;altra stanza celebra l&apos;arte di Van Gogh, con opere che catturano la sua tecnica unica e la sua visione emozionale del mondo. Un&apos;intera sezione è dedicata all&apos;Italia, mostrando capolavori rinascimentali e moderni che riflettono la ricca tradizione artistica del paese. Inoltre, una stanza interattiva offre un&apos;esperienza coinvolgente, dove i visitatori possono esplorare opere d&apos;arte in modo dinamico e immersivo. Ogni sala invita gli utenti a scoprire nuove opere e a immergersi in un&apos;esperienza culturale che stimola la curiosità e l&apos;arte.</progettoMuseo:descrizioneMuseo>
+        <progettoMuseo:nomeMuseo xml:lang="it">Museo Interattivo</progettoMuseo:nomeMuseo>
+        <progettoMuseo:statoMuseo xml:lang="it">Italia</progettoMuseo:statoMuseo>
+        <rdfs:label xml:lang="it">Museo</rdfs:label>
+        <rdfs:label xml:lang="en">Museum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nessunaGuida -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nessunaGuida">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#NessunaGuida"/>
+        <Conduce rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato1"/>
+        <Conduce rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato2"/>
+        <progettoMuseo:idAgente rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">5</progettoMuseo:idAgente>
+        <progettoMuseo:nomeAgente xml:lang="it">Nessuna guida</progettoMuseo:nomeAgente>
+        <progettoMuseo:tipoAgente xml:lang="it">Non c&apos;è guida</progettoMuseo:tipoAgente>
+        <rdfs:label xml:lang="it">NessunaGuida</rdfs:label>
+        <rdfs:label xml:lang="en">NoGuide</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#pendolo -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#pendolo">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Installazione_Interattiva"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo1"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo2"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore1"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore2"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore3"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore4"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaInterattiva"/>
+        <progettoMuseo:dataDiCreazioneOpera>XX secolo</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">Il pendolo interattivo è un&apos;installazione che combina scienza e partecipazione. I visitatori possono osservare e influenzare il movimento del pendolo, esplorando principi fisici come il moto armonico e la gravità. Grazie a sensori, l&apos;installazione mostra in tempo reale dati sul movimento, permettendo di sperimentare e comprendere concetti scientifici in modo coinvolgente e pratico.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>3-15 m</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(-17.73682, 5.805109, -11.01132)</progettoMuseo:posizioneOpera>
+        <autoreOpera xml:lang="it">Sconosciuto</autoreOpera>
+        <materialeOpera xml:lang="it">legno</materialeOpera>
+        <materialeOpera xml:lang="it">metallo</materialeOpera>
+        <materialeOpera xml:lang="it">pietra</materialeOpera>
+        <nomeOpera xml:lang="it">Pendolo</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Periodo contemporaneo</periodoStoricoOpera>
+        <rdfs:label xml:lang="it">Pendolo</rdfs:label>
+        <rdfs:label xml:lang="en">Pendulum</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#sistemaSolare -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#sistemaSolare">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Installazione_Interattiva"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo1"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo2"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore1"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore2"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore3"/>
+        <progettoMuseo:èInteragitaDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore4"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaInterattiva"/>
+        <progettoMuseo:dataDiCreazioneOpera>XX secolo</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">Il sistema solare interattivo è un&apos;installazione educativa che permette ai visitatori di esplorare i pianeti, il Sole e le loro relazioni attraverso tecnologie immersive. I visitatori possono osservare orbite, rotazioni e caratteristiche planetarie in tempo reale, interagendo tramite sensori di movimento. Questi modelli offrono un&apos;esperienza visiva e didattica unica, avvicinando il pubblico ai misteri dell&apos;universo in modo coinvolgente.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>2-3 m</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(-1, 0, 0.059)</progettoMuseo:posizioneOpera>
+        <autoreOpera xml:lang="it">Sconosciuto</autoreOpera>
+        <materialeOpera xml:lang="it">metallo</materialeOpera>
+        <materialeOpera xml:lang="it">plastica tecnica</materialeOpera>
+        <materialeOpera xml:lang="it">vetro</materialeOpera>
+        <nomeOpera xml:lang="it">Sistema solare</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Periodo contemporaneo</periodoStoricoOpera>
+        <rdfs:label xml:lang="it">SistemaSolare</rdfs:label>
+        <rdfs:label xml:lang="en">SolarSystem</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaGrecia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaGrecia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Tematica"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#AfroditeDiMilo"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Discobolo"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#capitelloIonico"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#vasoGreco"/>
+        <èContenuto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo"/>
+        <progettoMuseo:descrizioneStanza xml:lang="it">Questa stanza ospita una collezione unica di opere d&apos;arte e manufatti provenienti dalla civiltà greca antica. Tra i pezzi esposti si trovano statue marmoree, vasi decorati con scene mitologiche e frammenti architettonici. Ogni oggetto racconta la storia di una cultura che ha influenzato profondamente l&apos;arte, la filosofia e la politica del mondo occidentale. La stanza è progettata per ricreare l&apos;atmosfera delle polis greche, con luci soffuse che mettono in risalto i dettagli delle opere.</progettoMuseo:descrizioneStanza>
+        <progettoMuseo:materialeInterattivoStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:materialeInterattivoStanza>
+        <progettoMuseo:nomeStanza xml:lang="it">Stanza Grecia</progettoMuseo:nomeStanza>
+        <progettoMuseo:numeroStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</progettoMuseo:numeroStanza>
+        <progettoMuseo:tipoStanza xml:lang="it">Temativa</progettoMuseo:tipoStanza>
+        <accessibilitàStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</accessibilitàStanza>
+        <rdfs:label xml:lang="en">GreeceRoom</rdfs:label>
+        <rdfs:label xml:lang="it">StanzaGrecia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaInterattiva -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaInterattiva">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Interattiva"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#globoTerrestre"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#pendolo"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#sistemaSolare"/>
+        <èContenuto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo"/>
+        <progettoMuseo:descrizioneStanza xml:lang="it">La stanza interattiva è uno spazio progettato per offrire ai visitatori un&apos;esperienza immersiva e partecipativa. Utilizzando tecnologie avanzate come touchscreen, realtà virtuale o sensori di movimento, i visitatori possono esplorare contenuti multimediali, simulazioni o giochi educativi. Questo approccio innovativo stimola l&apos;apprendimento e rende l&apos;esperienza museale coinvolgente per tutte le età.</progettoMuseo:descrizioneStanza>
+        <progettoMuseo:materialeInterattivoStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</progettoMuseo:materialeInterattivoStanza>
+        <progettoMuseo:nomeStanza xml:lang="it">Stanza Interattiva</progettoMuseo:nomeStanza>
+        <progettoMuseo:numeroStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</progettoMuseo:numeroStanza>
+        <progettoMuseo:tipoStanza xml:lang="it">Interattiva</progettoMuseo:tipoStanza>
+        <accessibilitàStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</accessibilitàStanza>
+        <rdfs:label xml:lang="en">InteractiveRoom</rdfs:label>
+        <rdfs:label xml:lang="it">StanzaInterattiva</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaItalia -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaItalia">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Tematica"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#AmoreEPsiche"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#David"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Gioconda"/>
+        <èContenuto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo"/>
+        <progettoMuseo:descrizioneStanza xml:lang="it">Uno spazio dedicato alla celebrazione dell’arte, della storia e della cultura italiana. Questa stanza raccoglie opere e manufatti che attraversano secoli di tradizioni, dai capolavori rinascimentali alle espressioni artistiche moderne. Tra dipinti, sculture e oggetti d’arte decorativa, i visitatori possono scoprire l’evoluzione culturale dell’Italia e il suo impatto sul patrimonio artistico mondiale. L&apos;ambiente evoca l&apos;eleganza e la ricchezza della tradizione italiana, offrendo un&apos;esperienza visiva e culturale unica.</progettoMuseo:descrizioneStanza>
+        <progettoMuseo:materialeInterattivoStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:materialeInterattivoStanza>
+        <progettoMuseo:nomeStanza xml:lang="it">Stanza Italia</progettoMuseo:nomeStanza>
+        <progettoMuseo:numeroStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</progettoMuseo:numeroStanza>
+        <progettoMuseo:tipoStanza xml:lang="it">Tematica</progettoMuseo:tipoStanza>
+        <accessibilitàStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</accessibilitàStanza>
+        <rdfs:label xml:lang="en">ItalyRoom</rdfs:label>
+        <rdfs:label xml:lang="it">StanzaItalia</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaVanGogh -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaVanGogh">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Stanza_Tematica"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Autoritratto"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#LaNotteStellata"/>
+        <Espone rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#RamoDiMandorloFiorito"/>
+        <èContenuto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo"/>
+        <progettoMuseo:descrizioneStanza xml:lang="it">Un viaggio immersivo nell&apos;arte di Vincent van Gogh, questa stanza presenta una selezione delle sue opere più iconiche, tra cui paesaggi vibranti, ritratti intensi e nature morte dai colori vivaci. Ogni dipinto riflette l&apos;emotività e la genialità del maestro post-impressionista, offrendo ai visitatori uno sguardo unico sulla sua vita e visione artistica. L&apos;allestimento è arricchito da dettagli che evocano l&apos;atmosfera dei luoghi e delle epoche che hanno ispirato l&apos;artista.</progettoMuseo:descrizioneStanza>
+        <progettoMuseo:materialeInterattivoStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">0</progettoMuseo:materialeInterattivoStanza>
+        <progettoMuseo:nomeStanza xml:lang="it">Stanza Van Gogh</progettoMuseo:nomeStanza>
+        <progettoMuseo:numeroStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</progettoMuseo:numeroStanza>
+        <progettoMuseo:tipoStanza xml:lang="it">Tematica</progettoMuseo:tipoStanza>
+        <accessibilitàStanza rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1</accessibilitàStanza>
+        <rdfs:label xml:lang="it">StanzaVanGogh</rdfs:label>
+        <rdfs:label xml:lang="en">VanGoghRoom</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Tour_Guidato"/>
+        <èCondottoDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#guidaPersona"/>
+        <èCondottoDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#guidaRobot"/>
+        <èOrganizzato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo1"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo2"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore1"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore2"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore3"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore4"/>
+        <progettoMuseo:descrizioneEvento xml:lang="it">Il tour guidato del museo è un&apos;esperienza coinvolgente e informativa, condotta da una guida esperta che accompagna i visitatori attraverso le diverse stanze del museo. Ogni sala viene esplorata in dettaglio, con la guida che condivide storie affascinanti e informazioni sulle opere d&apos;arte, la loro storia e il loro significato. I partecipanti possono fare domande e scoprire curiosità, rendendo il tour un&apos;opportunità unica per approfondire la cultura e la storia. Un&apos;esperienza che arricchisce la visita, offrendo una visione più profonda e personalizzata del patrimonio artistico del museo.</progettoMuseo:descrizioneEvento>
+        <progettoMuseo:idEvento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</progettoMuseo:idEvento>
+        <progettoMuseo:nomeEvento xml:lang="it">Tour guidato 1</progettoMuseo:nomeEvento>
+        <progettoMuseo:tipoEvento xml:lang="it">Tour guidato</progettoMuseo:tipoEvento>
+        <dataEvento rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-15T11:30:02</dataEvento>
+        <rdfs:label xml:lang="en">GuidedTour1</rdfs:label>
+        <rdfs:label xml:lang="it">TourGuidato1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Tour_Guidato"/>
+        <èCondottoDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#guidaPersona"/>
+        <èCondottoDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#guidaRobot"/>
+        <èOrganizzato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo1"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo2"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore1"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore2"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore3"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore4"/>
+        <progettoMuseo:descrizioneEvento xml:lang="it">Il tour guidato del museo è un&apos;esperienza coinvolgente e informativa, condotta da una guida esperta che accompagna i visitatori attraverso le diverse stanze del museo. Ogni sala viene esplorata in dettaglio, con la guida che condivide storie affascinanti e informazioni sulle opere d&apos;arte, la loro storia e il loro significato. I partecipanti possono fare domande e scoprire curiosità, rendendo il tour un&apos;opportunità unica per approfondire la cultura e la storia. Un&apos;esperienza che arricchisce la visita, offrendo una visione più profonda e personalizzata del patrimonio artistico del museo.</progettoMuseo:descrizioneEvento>
+        <progettoMuseo:idEvento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</progettoMuseo:idEvento>
+        <progettoMuseo:nomeEvento xml:lang="it">Tour Guidato 2</progettoMuseo:nomeEvento>
+        <progettoMuseo:tipoEvento xml:lang="it">Tour guidato</progettoMuseo:tipoEvento>
+        <dataEvento rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-03T09:15:11</dataEvento>
+        <rdfs:label xml:lang="en">GuidedTour2</rdfs:label>
+        <rdfs:label xml:lang="it">TourGuidato2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#TourNonGuidato"/>
+        <èCondottoDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nessunaGuida"/>
+        <èOrganizzato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo1"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo2"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore1"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore2"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore3"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore4"/>
+        <progettoMuseo:descrizioneEvento xml:lang="it">Il tour non guidato del museo offre ai visitatori la libertà di esplorare le stanze e le opere al proprio ritmo. Senza una guida, i partecipanti possono scegliere autonomamente quali esposizioni approfondire, utilizzando eventuali dispositivi interattivi, audioguide o informazioni scritte per arricchire la visita. Questo tipo di tour permette un&apos;esperienza più personale e flessibile, dando spazio alla curiosità individuale e alla scoperta autonoma delle opere e dei temi trattati nel museo.</progettoMuseo:descrizioneEvento>
+        <progettoMuseo:idEvento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</progettoMuseo:idEvento>
+        <progettoMuseo:nomeEvento xml:lang="it">Tour non guidato 1</progettoMuseo:nomeEvento>
+        <progettoMuseo:tipoEvento xml:lang="it">Tour non guidato</progettoMuseo:tipoEvento>
+        <dataEvento rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-15T11:30:15</dataEvento>
+        <rdfs:label xml:lang="en">NoGuidedTour1</rdfs:label>
+        <rdfs:label xml:lang="it">TourNonGuidato1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#TourNonGuidato"/>
+        <èCondottoDa rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#nessunaGuida"/>
+        <èOrganizzato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#museo"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo1"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#gruppo2"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore1"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore2"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore3"/>
+        <èPartecipato rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore4"/>
+        <progettoMuseo:descrizioneEvento xml:lang="it">Il tour non guidato del museo offre ai visitatori la libertà di esplorare le stanze e le opere al proprio ritmo. Senza una guida, i partecipanti possono scegliere autonomamente quali esposizioni approfondire, utilizzando eventuali dispositivi interattivi, audioguide o informazioni scritte per arricchire la visita. Questo tipo di tour permette un&apos;esperienza più personale e flessibile, dando spazio alla curiosità individuale e alla scoperta autonoma delle opere e dei temi trattati nel museo.</progettoMuseo:descrizioneEvento>
+        <progettoMuseo:idEvento rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</progettoMuseo:idEvento>
+        <progettoMuseo:nomeEvento xml:lang="it">Tour non guidato 2</progettoMuseo:nomeEvento>
+        <progettoMuseo:tipoEvento xml:lang="it">Tour non guidato</progettoMuseo:tipoEvento>
+        <dataEvento rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-15T13:00:00</dataEvento>
+        <rdfs:label xml:lang="en">NoGuidedTour1</rdfs:label>
+        <rdfs:label xml:lang="it">TourNonGuidato2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#vasoGreco -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#vasoGreco">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Artefatto"/>
+        <èEsposto rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#stanzaGrecia"/>
+        <progettoMuseo:dataDiCreazioneOpera>XI-I secolo a.C.</progettoMuseo:dataDiCreazioneOpera>
+        <progettoMuseo:descrizioneOpera xml:lang="it">I vasi dell&apos;antica Grecia, prodotti tra il IX e il I secolo a.C., sono celebri per la loro funzione pratica e decorativa, nonché per l&apos;elevato valore artistico. Realizzati principalmente in argilla, presentano decorazioni che evolvono da motivi geometrici a scene complesse di vita quotidiana, mitologia e rituali. Tra gli artisti noti, Exekias e Euphronios si distinguono per il loro contributo allo stile a figure nere e rosse. Ogni vaso racconta una storia, riflettendo le credenze, la cultura e l&apos;estetica dell&apos;antica Grecia.</progettoMuseo:descrizioneOpera>
+        <progettoMuseo:dimensioneOpera>70 cm</progettoMuseo:dimensioneOpera>
+        <progettoMuseo:interattivitàOpera rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0</progettoMuseo:interattivitàOpera>
+        <progettoMuseo:posizioneOpera>(-0.83, 0, -0.09)</progettoMuseo:posizioneOpera>
+        <autoreOpera xml:lang="it">Ceramisti dell&apos;antica Grecia</autoreOpera>
+        <materialeOpera xml:lang="it">Argilla</materialeOpera>
+        <nomeOpera xml:lang="it">Vasi dell&apos;antica Grecia</nomeOpera>
+        <periodoStoricoOpera xml:lang="it">Età del bronzo-periodo ellenistico</periodoStoricoOpera>
+        <rdfs:label xml:lang="en">GreekVase</rdfs:label>
+        <rdfs:label xml:lang="it">VasoGreco</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore_Individuale"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#globoTerrestre"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#pendolo"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#sistemaSolare"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato2"/>
+        <progettoMuseo:cognomeVisitatore>Rossi</progettoMuseo:cognomeVisitatore>
+        <progettoMuseo:dataDiNascitaVisitatore rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1999-04-01T16:11:11</progettoMuseo:dataDiNascitaVisitatore>
+        <progettoMuseo:dataVisita rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-12-11T11:30:15</progettoMuseo:dataVisita>
+        <progettoMuseo:idVisitatore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">1</progettoMuseo:idVisitatore>
+        <progettoMuseo:nomeVisitatore>David</progettoMuseo:nomeVisitatore>
+        <rdfs:label xml:lang="it">Visitatore1</rdfs:label>
+        <rdfs:label xml:lang="en">Visitor1</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore_Individuale"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#globoTerrestre"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#pendolo"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#sistemaSolare"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato2"/>
+        <progettoMuseo:cognomeVisitatore>Verdi</progettoMuseo:cognomeVisitatore>
+        <progettoMuseo:dataDiNascitaVisitatore rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">1978-03-23T11:45:45</progettoMuseo:dataDiNascitaVisitatore>
+        <progettoMuseo:dataVisita rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-11-10T17:25:11</progettoMuseo:dataVisita>
+        <progettoMuseo:idVisitatore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">2</progettoMuseo:idVisitatore>
+        <progettoMuseo:nomeVisitatore>Lara</progettoMuseo:nomeVisitatore>
+        <rdfs:label xml:lang="it">Visitatore2</rdfs:label>
+        <rdfs:label xml:lang="en">Visitor2</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore_Individuale"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#globoTerrestre"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#pendolo"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#sistemaSolare"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato2"/>
+        <progettoMuseo:cognomeVisitatore>Vitale</progettoMuseo:cognomeVisitatore>
+        <progettoMuseo:dataDiNascitaVisitatore rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2000-02-02T14:14:14</progettoMuseo:dataDiNascitaVisitatore>
+        <progettoMuseo:dataVisita rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-09-09T09:09:09</progettoMuseo:dataVisita>
+        <progettoMuseo:idVisitatore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">3</progettoMuseo:idVisitatore>
+        <progettoMuseo:nomeVisitatore>Franco</progettoMuseo:nomeVisitatore>
+        <rdfs:label xml:lang="it">Visitatore3</rdfs:label>
+        <rdfs:label xml:lang="en">Visitor3</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore4 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#visitatore4">
+        <rdf:type rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo/Visitatore_Individuale"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#globoTerrestre"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#pendolo"/>
+        <Interagisce_con rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#sistemaSolare"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourGuidato2"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato1"/>
+        <Partecipazione_a_Evento rdf:resource="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#tourNonGuidato2"/>
+        <progettoMuseo:cognomeVisitatore>Luna</progettoMuseo:cognomeVisitatore>
+        <progettoMuseo:dataDiNascitaVisitatore rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2005-05-05T15:15:15</progettoMuseo:dataDiNascitaVisitatore>
+        <progettoMuseo:dataVisita rdf:datatype="http://www.w3.org/2001/XMLSchema#dateTime">2024-06-06T18:30:20</progettoMuseo:dataVisita>
+        <progettoMuseo:idVisitatore rdf:datatype="http://www.w3.org/2001/XMLSchema#integer">4</progettoMuseo:idVisitatore>
+        <progettoMuseo:nomeVisitatore>Giulia</progettoMuseo:nomeVisitatore>
+        <rdfs:label xml:lang="it">Visitatore4</rdfs:label>
+        <rdfs:label xml:lang="en">Visitor4</rdfs:label>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description rdf:about="http://www.semanticweb.org/lucreziamosca/ontologies/progettoMuseo#Ingresso">
+        <rdfs:label xml:lang="en">Entrance</rdfs:label>
+        <rdfs:label xml:lang="it">Ingresso</rdfs:label>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
