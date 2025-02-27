@@ -12,8 +12,8 @@ RoboExhibit is a cutting-edge AI-driven system designed to revolutionize the mus
 ## Demo Video
 [🎥 Watch the video on Youtube!](https://youtu.be/Yx5UH_NVQaA)
 ## Unity Project
-[Link Download Unity Project]([https://youtu.be/Yx5UH_NVQaA](https://drive.google.com/drive/folders/1RwsfyaBKtPtwyXdXrcuHWLGNexv6quj4?usp=sharing
-))
+[Link Download Unity Project](https://drive.google.com/drive/folders/1RwsfyaBKtPtwyXdXrcuHWLGNexv6quj4?usp=sharing)
+
 ## Repository Structure
 The project is organized into the following key files and directories:
 
