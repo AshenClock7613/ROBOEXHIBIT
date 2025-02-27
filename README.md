@@ -18,6 +18,7 @@ The project is organized into the following key files and directories:
 - **Ontologia.rdf** - The RDF ontology used for knowledge representation and semantic queries within the museum.
 - **Diagramma delle classi.asta** - A diagram illustrating the class relationships and interactions within the system.
 - **video_1.mp4** - A demonstration video showcasing the RoboExhibit experience in action.
+- **app.py** - The Python backend handling natural language queries, generating SPARQL queries, and interfacing with Hugging Face Spaces for response generation.
 
 ## Key Features
 - **AI-Powered Multilingual Museum Guides**: RoboExhibit guides provide real-time explanations and recommendations based on visitor interests. They can communicate fluently in multiple languages, ensuring accessibility for international visitors.
@@ -32,6 +33,11 @@ The project is organized into the following key files and directories:
   - Uses an AI-driven **language model** to generate natural and context-aware responses.
   - Translates responses into multiple languages if necessary.
   - Leverages a **backend hosted on Hugging Face Spaces** to process natural language queries efficiently and generate real-time responses.
+- **Python Backend Integration**: The **app.py** script serves as the core backend, handling:
+  - Query classification and generation using Llama-3.3-70B-Instruct hosted on Hugging Face Spaces.
+  - Language detection and translation via **XLM-RoBERTa** and **Helsinki-NLP models**.
+  - SPARQL query validation and execution using **rdflib**.
+  - Logging and request handling through **FastAPI** and **Uvicorn**.
 - **Human-Robot Collaboration**: The system is designed to complement human staff, allowing for seamless coordination between robotic and human guides, ensuring a rich and flexible experience for visitors.
 - **Interactive Digital Exhibits and Multi-Sensory Engagement**: Certain museum rooms feature AI-powered interactive displays that react dynamically to visitor presence and input, offering deeper engagement with artworks and artifacts.
 - **Real-Time Replanning and Adaptive Tour Paths**: Unlike static guided tours, RoboExhibit continuously re-evaluates and modifies visitor routes based on preferences, new requests, environmental conditions, and updated museum schedules. This ensures that visitors receive a highly personalized and adaptive tour experience.
