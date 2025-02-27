@@ -35,7 +35,7 @@ The project is organized into the following key files and directories:
   - Translates responses into multiple languages if necessary.
   - Leverages a **backend hosted on Hugging Face Spaces** to process natural language queries efficiently and generate real-time responses.
 - **Python Backend Integration**: The **app.py** script serves as the core backend, handling:
-  - Query classification and generation using Llama-3.3-70B-Instruct hosted on Hugging Face Spaces.
+  - Query classification and generation using Qwen2.5-72B-Instruct with InferenceClient on Hugging Face Spaces.
   - Language detection and translation via **XLM-RoBERTa** and **Helsinki-NLP models**.
   - SPARQL query validation and execution using **rdflib**.
   - Logging and request handling through **FastAPI** and **Uvicorn**.
