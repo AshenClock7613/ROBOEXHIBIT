@@ -12,12 +12,13 @@ RoboExhibit is a cutting-edge AI-driven system designed to revolutionize the mus
 
 ## Repository Structure
 The project is organized into the following key files and directories:
+## Demo Video
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Yx5UH_NVQaA" frameborder="0" allowfullscreen></iframe>
 
 - **Documentazione RoboExhibit.pdf** - Detailed documentation about the project, methodologies, and implementation.
 - **Museo.zip** - The full Unity project containing the AI-driven museum experience, including the agent behaviors and interactive environments.
 - **Ontologia.rdf** - The RDF ontology used for knowledge representation and semantic queries within the museum.
 - **Diagramma delle classi.asta** - A diagram illustrating the class relationships and interactions within the system.
-- **video_1.mp4** - A demonstration video showcasing the RoboExhibit experience in action.
 - **app.py** - The Python backend handling natural language queries, generating SPARQL queries, and interfacing with Hugging Face Spaces for response generation.
 
 ## Key Features
