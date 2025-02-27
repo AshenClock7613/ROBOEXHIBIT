@@ -10,6 +10,15 @@ This repository contains code and resources for RoboExhibit, an AI-powered inter
 ## Project Overview
 RoboExhibit is a cutting-edge AI-driven system designed to revolutionize the museum experience by integrating **virtual and physical intelligent agents**. These agents serve as museum guides, dynamically adapting their behavior based on visitor preferences, movement patterns, and environmental conditions. The system leverages **ontology-based knowledge representation, natural language processing (NLP), multi-agent coordination, and real-time navigation algorithms** to create a highly engaging, interactive, and immersive environment tailored to each visitor’s needs.
 
+## Repository Structure
+The project is organized into the following key files and directories:
+
+- **Documentazione RoboExhibit.pdf** - Detailed documentation about the project, methodologies, and implementation.
+- **Museo.zip** - The full Unity project containing the AI-driven museum experience, including the agent behaviors and interactive environments.
+- **Ontologia.rdf** - The RDF ontology used for knowledge representation and semantic queries within the museum.
+- **Diagramma delle classi.asta** - A diagram illustrating the class relationships and interactions within the system.
+- **video_1.mp4** - A demonstration video showcasing the RoboExhibit experience in action.
+
 ## Key Features
 - **AI-Powered Multilingual Museum Guides**: RoboExhibit guides provide real-time explanations and recommendations based on visitor interests. They can communicate fluently in multiple languages, ensuring accessibility for international visitors.
 - **Ontology-Based Knowledge Representation**: Museum data is structured using an RDF-based knowledge graph, queried dynamically through SPARQL to provide precise and contextual responses to visitor questions.
@@ -64,3 +73,4 @@ For more details, refer to the [Documentazione RoboExhibit.pdf](Documentazione_R
 
 ## License
 This project is distributed under the license found in the **LICENSE** file.
+
